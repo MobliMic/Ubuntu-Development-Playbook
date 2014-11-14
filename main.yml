@@ -1,0 +1,6 @@
+---
+# main.yml - top level playbook
+ - sudo: yes
+ - hosts: 192.168.1.42
+ - roles:
+     - common

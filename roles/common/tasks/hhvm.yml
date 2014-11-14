@@ -1,0 +1,9 @@
+---
+  - name: Get HHVM Key
+    apt_key: url=http://dl.hhvm.com/conf/hhvm.gpg.key state=present
+
+  - name: Get HHVM Repo
+    apt_repository: repo='deb http://dl.hhvm.com/ubuntu trusty main' state=present
+
+  - name: Install HHVM
+    apt: name=hhvm update_cache=yes

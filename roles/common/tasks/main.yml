@@ -1,0 +1,9 @@
+---
+  - apt: update_cache=true
+  
+  - include: git.yml
+  - include: hhvm.yml
+  - include: dropbox.yml
+
+  - apt: update_cache=true
+  - apt: upgrade=dist
