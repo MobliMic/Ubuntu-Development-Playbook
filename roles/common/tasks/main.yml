@@ -5,6 +5,8 @@
   - include: nginx.yml
   - include: hhvm.yml
   - include: mariadb.yml
+
+  - include: flux.yml
   - include: mysqlwb.yml
   - include: spotify.yml
   - include: dropbox.yml

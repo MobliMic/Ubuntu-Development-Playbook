@@ -1,0 +1,6 @@
+---
+  - name: Add flux key
+    apt_repository: repo='ppa:kilian/f.lux'
+
+  - name: Install Flux
+    apt: name=fluxgui update_cache=yes
