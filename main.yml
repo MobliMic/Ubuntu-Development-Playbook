@@ -1,6 +1,9 @@
 ---
 # main.yml - top level playbook
  - sudo: yes
+ # put actual ip address here
  - hosts: 192.168.1.42
+
+ # More roles will come after organising and cleaning up, but for now just stick it all in common
  - roles:
      - common

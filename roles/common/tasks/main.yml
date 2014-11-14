@@ -1,9 +1,14 @@
 ---
   - apt: update_cache=true
-  
+
   - include: git.yml
+  - include: nginx.yml
   - include: hhvm.yml
+  - include: mariadb.yml
+  - include: mysqlwb.yml
+  - include: spotify.yml
   - include: dropbox.yml
+  - include: phpstorm.yml
 
   - apt: update_cache=true
   - apt: upgrade=dist

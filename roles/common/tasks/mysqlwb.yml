@@ -1,0 +1,4 @@
+---
+  - name: Install Workbench
+    apt: name=mysql-workbench-community
+    #this is probably wrong. will see in testing
