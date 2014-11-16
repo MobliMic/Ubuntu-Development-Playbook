@@ -1,2 +1,3 @@
 ---
-  #install mariadb
+  - name: Install MariaDB
+    apt: name=mariadb-server

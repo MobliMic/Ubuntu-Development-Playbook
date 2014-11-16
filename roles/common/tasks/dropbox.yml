@@ -1,6 +1,7 @@
 ---
-  - name: Get Dropbox
-    get_url: url=https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.2_amd64.deb dest=/root/dropbox_1.6.2_amd64.deb
+  #- name: Get Dropbox
+#    get_url: url=https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.6.2_amd64.deb dest=/root/dropbox_1.6.2_amd64.deb
 
   - name: Install Dropbox
-    apt: deb=/root/dropbox_1.6.2_amd64.deb
+    apt: name=dropbox
+    #apt: deb=/root/dropbox_1.6.2_amd64.deb

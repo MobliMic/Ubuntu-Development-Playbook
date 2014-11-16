@@ -1,16 +1,18 @@
 ---
-  - apt: update_cache=true
 
+  - include: conf.yml
   - include: git.yml
   - include: nginx.yml
   - include: hhvm.yml
-  #- include: mariadb.yml
+  - include: mariadb.yml
 
-  #- include: flux.yml
+  - include: flux.yml
   #- include: mysqlwb.yml
+  #- include: chrome.yml
   - include: spotify.yml
-  #- include: dropbox.yml
+  - include: dropbox.yml
   #- include: phpstorm.yml
 
-  - apt: update_cache=true
-  - apt: upgrade=dist
+  #- apt: update_cache=true
+#  - apt: upgrade=dist
+#      notify: reboot

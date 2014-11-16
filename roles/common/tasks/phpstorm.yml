@@ -1,12 +1,13 @@
 ---
-    - name: Get PHPStorm
-      get_url: url=http://download.jetbrains.com/webide/PhpStorm-8.0.1.tar.gz dest=/root/PhpStorm-8.0.1.tar.gz
-
-    - name: Unpack PHPStorm
-      unarchive: src=/root/PhpStorm-8.0.1.tar.gz dest=/root/phpstorm
-
-    - name: Install PHPStorm
-      shell: phpstorm.sh >> /root/phpstormlog.txt
-        args:
-          chdir: phpstorm/bin/
-          creates: /root/phpstormlog.txt
+-
+  get_url: "url=http://download.jetbrains.com/webide/PhpStorm-8.0.1.tar.gz dest=/root/PhpStorm-8.0.1.tar.gz"
+  name: "Get PHPStorm"
+-
+  name: "Unpack PHPStorm"
+  unarchive: "src=/root/PhpStorm-8.0.1.tar.gz dest=/root/phpstorm"
+-
+  args:
+    chdir: phpstorm/bin/
+    creates: /root/phpstormlog.txt
+  command: "./phpstorm.sh >> /root/phpstormlog.txt"
+  name: "Install PHPStorm"

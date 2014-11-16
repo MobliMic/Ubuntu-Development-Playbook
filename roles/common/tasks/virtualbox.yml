@@ -1,0 +1,3 @@
+---
+    - name: Install VirtualBox
+      apt: name=virtualbox-4.3 state=present

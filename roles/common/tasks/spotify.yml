@@ -1,10 +1,10 @@
 ---
     - name: Get Spotify Key
-      apt_key: keyserver=keyserver.ubuntu.com:80 id=94558F59
+      apt_key: keyserver=hkp://keyserver.ubuntu.com:80 id=94558F59
       # apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 94558F59
 
     - name: Get Spotify Repo
-      apt_repository: repodeb http://repository.spotify.com stable non-free' state=present
+      apt_repository: repo='deb http://repository.spotify.com stable non-free' state=present
 
     - name: Install Spotify
       apt: name=spotify-client update_cache=yes
