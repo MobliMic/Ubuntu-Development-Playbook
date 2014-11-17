@@ -1,2 +1,51 @@
 ---
-  # update the unity bar with corect files for my setup
+  # update the launcher bar with corect files for my setup
+  - name: Remove File 1
+  template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Remove File 1
+  template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Remove File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Remove File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Remove File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+######################################
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true
+
+  - name: Copy File 1
+template: src=sources.j2 dest=/etc/apt/sources.list owner=root
+- apt: update_cache=true

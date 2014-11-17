@@ -7,12 +7,15 @@
   - include: mariadb.yml
 
   - include: flux.yml
-  #- include: mysqlwb.yml
-  #- include: chrome.yml
+  # broken - include: mysqlwb.yml
+  - include: chrome.yml
   - include: spotify.yml
   - include: dropbox.yml
-  #- include: phpstorm.yml
+  - include: pidgin.yml
+  # broken - include: phpstorm.yml
 
-  #- apt: update_cache=true
-#  - apt: upgrade=dist
-#      notify: reboot
+  #- include: unity.yml
+
+  - apt: update_cache=true
+  - apt: upgrade=dist
+    notify: reboot
